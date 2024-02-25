@@ -14,10 +14,15 @@
 
 3. Подключиться к контейнеру PHP-FPM:
 
-   docker exec -it geolocation-fpm-1 bash
+   docker exec -it geolocation-fpm-1 bash (Wundows)
+   
+   docker exec -it geolocation_fpm_1 bash (Ubuntu)
+   
+   
+4. chmod -R 777 storage
+   
 
-
-4. Выполнить миграции:
+5. Выполнить миграции:
 
    php artisan migrate
 
