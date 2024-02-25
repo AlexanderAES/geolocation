@@ -2,29 +2,34 @@
 
 ## Запуск приложения
 
-1. Собрать и запустить контейнеры:
+**1. Собрать и запустить контейнеры:**
  
-   docker-compose up --build -d
+     docker-compose up --build -d
 
    
-2. Проверить запущенные контейнеры:
+**2. Проверить запущенные контейнеры:**
 
-	docker-compose ps
+	 docker-compose ps
 
 
-3. Подключиться к контейнеру PHP-FPM:
+**3. Подключиться к контейнеру PHP-FPM:**
 
-   docker exec -it geolocation-fpm-1 bash (Wundows)
+   - **Для Windows:**
+     
+     docker exec -it geolocation-fpm-1 bash
    
-   docker exec -it geolocation_fpm_1 bash (Ubuntu)
+   - **Для Ubuntu:**
+     
+     docker exec -it geolocation_fpm_1 bash
    
    
-4. Измененить права доступа к директории storage:
-   chmod -R 777 storage   
+**4. Измененить права доступа к директории storage (при необходимости):**
+ 
+     chmod -R 777 storage   
 
-5. Выполнить миграции:
+**5. Выполнить миграции:**
 
-   php artisan migrate
+     php artisan migrate
 
 ## Доступ к приложению
 
