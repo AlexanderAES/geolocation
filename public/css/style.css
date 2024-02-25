@@ -1,0 +1,178 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+}
+
+h1, h2 {
+    padding: 0;
+    margin: 0;
+}
+
+li, ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #fff;
+    background: #e5e5e5;
+}
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 30px 0;
+    background-color: rgb(28 105 166 / 79%);
+}
+
+.header__text {
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 3px;
+    text-align: right;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.geolocation {
+    padding: 90px 0;
+}
+
+.geolocation__text {
+    font-size: 30px;
+    color: #000000;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.geolocation__title {
+    font-size: 40px;
+    color: #000000;
+    text-align: center;
+}
+
+label {
+    display: block;
+    color: #000000;
+}
+
+.form-geolocation {
+    margin-top: 60px;
+}
+
+.form-geolocation__input {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+}
+
+.form-geolocation__input:focus,
+.form-geolocation__input:active {
+    border: 1px solid rgb(28 105 166 / 79%);
+}
+
+.form-geolocation__btn {
+    font-size: 20px;
+    min-width: 200px;
+    color: #000000;
+    font-weight: 600;
+    padding: 14px 20px;
+    border-radius: 10px;
+    background-color: rgb(28 105 166 / 79%);
+    border: none;
+    cursor: pointer;
+    height: 50px;
+}
+
+.form-geolocation__wrap {
+    margin-top: 30px;
+}
+
+.form-geolocation__button:hover {
+    background-color: #f3f3f3;
+    color: #6ebbd3;
+}
+
+.form-geolocation__result {
+    min-height: 200px;
+    color: #000000;
+}
+
+.footer {
+    background: #14273a;
+    padding: 80px 0;
+}
+
+.footer__text {
+    font-size: 28px;
+    line-height: 91.2%;
+    text-align: center;
+}
+
+.footer__block {
+    max-width: 400px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@keyframes spinner-border {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.submit-spinner.submit-spinner_hide {
+    display: none;
+}
+
+.form-geolocation__spinner-wrap {
+    position: relative;
+    display: inline-block;
+}
+
+.preloader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.submit-spinner {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    vertical-align: -0.125em;
+    border: 0.2em solid #ffffff;
+    border-right-color: transparent;
+    border-radius: 50%;
+    -webkit-animation: .75s linear infinite spinner-border;
+    animation: .75s linear infinite spinner-border;
+}
