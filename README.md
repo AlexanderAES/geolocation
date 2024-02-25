@@ -42,3 +42,7 @@
 - **Пользователь (User):** root
 - **Пароль (Password):** root
 - **База данных (Database):** geocode
+
+## Приложение развернуто на хостинге: 
+   http://alexaibk.beget.tech/
+   
