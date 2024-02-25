@@ -19,8 +19,8 @@
    docker exec -it geolocation_fpm_1 bash (Ubuntu)
    
    
-4. chmod -R 777 storage
-   
+4. Измененить права доступа к директории storage:
+   chmod -R 777 storage   
 
 5. Выполнить миграции:
 
