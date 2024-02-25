@@ -1,4 +1,4 @@
-# Проект Geolocation(Geocode)
+# Geolocation(Geocode)
 
 ## Запуск приложения
 
