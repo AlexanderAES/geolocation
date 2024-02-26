@@ -2,17 +2,28 @@
 
 ## Запуск приложения
 
-**1. Собрать и запустить контейнеры:**
+**1. Добавить файл .env:**
+
+        API_KEY="your_api_key"
+
+        DB_CONNECTION=mysql
+        DB_HOST=mysql
+        DB_PORT=3306
+        DB_DATABASE=geocode
+        DB_USERNAME=root
+        DB_PASSWORD=root
+
+**2. Собрать и запустить контейнеры:**
  
      docker-compose up --build -d
 
    
-**2. Проверить запущенные контейнеры:**
+**3. Проверить запущенные контейнеры:**
 
 	 docker-compose ps
 
 
-**3. Подключиться к контейнеру PHP-FPM:**
+**4. Подключиться к контейнеру PHP-FPM:**
 
    - **Для Windows:**
      
@@ -23,24 +34,14 @@
      docker exec -it geolocation_fpm_1 bash
    
    
-**4. Измененить права доступа к директории storage (при необходимости):**
+**5. Измененить права доступа к директории storage (при необходимости):**
  
      chmod -R 777 storage   
 
-**5. Выполнить миграции:**
+**6. Выполнить миграции:**
 
      php artisan migrate
      
-**6. Файл .env:**
-
-        API_KEY="your_api_key"
-
-        DB_CONNECTION=mysql
-        DB_HOST=mysql
-        DB_PORT=3306
-        DB_DATABASE=geocode
-        DB_USERNAME=root
-        DB_PASSWORD=root
 
 ## Доступ к приложению
 
