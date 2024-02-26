@@ -30,6 +30,17 @@
 **5. Выполнить миграции:**
 
      php artisan migrate
+     
+**6. Файл .env:**
+
+        API_KEY="your_api_key"
+
+        DB_CONNECTION=mysql
+        DB_HOST=mysql
+        DB_PORT=3306
+        DB_DATABASE=geocode
+        DB_USERNAME=root
+        DB_PASSWORD=root
 
 ## Доступ к приложению
 
